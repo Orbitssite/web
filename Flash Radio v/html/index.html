@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/pricedown" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>FlashFM</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#inicio" class="logo"><img src="/img/logos/FLASH_FM" alt="flashFm"></a>
+            <ul class="menu">
+                <li><a href="#nosotros"">About</a></li>
+                <li><a href=" #noticias">News</a></li>
+                <li><a href="#eventos">Events</a></li>
+            </ul>
+
+        </nav><!--------Final Navbar-------->
+
+    </header>
+    <main>
+        <div id="inicio" class="scroll heroImg">
+            <div class="video">
+                <video class="videoRadio" id="videoFm" autoplay height="400px" width="400px" playsinline volume="5"
+                    src="/video/flashFm.mp4"></video>
+                <div class="controles">
+                    <input class="volumeSlide" id="volumeControl" type="range" value="50" min="0" max="100" step="1"
+                        oninput="SetVolume(this.value)" onchange="SetVolume(this.value)">
+                    <div class="valorVolumen">50</div>
+                </div>
+            </div><!--------Final Video-------->
+
+            <div class="slogan">
+                <p>"if it is totally tubular, rad or awesome" it plays on Flash.</p>
+            </div><!--------Final Slogan-------->
+
+        </div><!--------Final Hero Image-------->
+
+        <div class=" contenedor contenedorNosotros">
+            <div id="nosotros" class="nosotros ">
+                <div class="texto">
+                    <p>
+                        About<br>
+                        The station is hosted by Toni and Teri in 1984, with Toni becoming the sole DJ by 1986 following
+                        Teri's departure from the station.
+                    </p>
+                </div>
+                <img src="/img/pj/DJTony.png" alt="toni">
+            </div>
+        </div><!--------Final Nosotros-------->
+
+        <div id="noticias" class="scroll contenedorNoticias">
+            <p class="titulos text-al">News</p>
+
+            <div class="noticias">
+                <div class="montserrat tarjetas">
+                    <div class="tarjeta">
+                        <a href="#"><img src="/img/pj/SonnyForelli-GTAVC.webp" alt="Noticia"></a>
+                        <h2 class="roboto-black">Who is Sonny Forelli?</h2>
+                        <p>Sonny was born into the Liberty City-based Forelli Crime Family, an Italian-American mob.
+                            Sonny joined the family's ranks, eventually rising to power at a young age. Under Sonny's
+                            reign.</p>
+                    </div><!--------Final Tarjeta-------->
+
+                    <div class="tarjeta">
+                        <a href=""><img src="/img/pj/TommyVercetti-GTAVC.webp" alt="noticia"></a>
+                        <h2>Wanted : Tommy Vercetti</h2>
+                        <p>Tommy Vercetti wanted for multiple crimes in Vice City.<br>
+                            A reward of $1000 is given to anyone who provides information.
+                        </p>
+                    </div><!--------Final Tarjeta-------->
+
+                    <div class="tarjeta">
+                        <a href=""><img src="/img/news/ElBancoCorruptoGrandeBuilding-GTAVC.webp" alt="noticia"></a>
+                        <h2>Robbery at the Big Corrupt Bank</h2>
+                        <p>It is still not known who carried out the bank robbery, but there were 2 victims and these
+                            were two bank security guards.</p>
+                    </div><!--------Final Tarjeta-------->
+
+                </div>
+            </div>
+        </div><!--------Final News-------->
+
+        <div id="eventos" class="scroll">
+            <h2 id="eventos" class="titulos text-al">Events</h2>
+            <div class="eventos">
+                <div class="montserrat tarjetas">
+                    <div class="tarjeta">
+                        <a href="/img/news/ZombieElvisFound-GTAIII-Closeup.webp"><img src="/img/news/ZombieElvisFound-GTAIII-Closeup.webp" alt=""></a>
+                        <h2>Newspapers in Vice City</h2>
+                        <p>Several newspapers were found about the Elvis zombie sighting<br>
+                            We will talk about this event and look for an explanation.
+                        </p>
+                    </div><!--------Final Tarjeta-------->
+
+                    <div class="tarjeta">
+                        <a href="/img/pj/Avery_Carrington_VC.webp"><img src="/img/pj/Avery_Carrington_VC.webp" alt=""></a>
+                        <h2>Avery Carrington</h2>
+                        <p>We invited the successful Avery Carrington.<br>
+                            Let's find out how Avery Carrington got his fortune through hard work.
+                        </p>
+                    </div><!--------Final Tarjeta-------->
+
+                    <div class="tarjeta candy">
+                        <a href="/img/pj/Avery_Carrington_VC.webp"><img src="/img/pj/Candysuxx-1-.webp" alt=""></a>
+                        <h2>The famous Candy Suxxx</h2>
+                        <p>Do you know Candy Suxxx?<br>
+                            Today we will talk about his profession and how he became so popular in what he does.
+                        </p>
+                    </div><!--------Final Tarjeta-------->
+                    
+                </div>
+            </div>
+        </div><!--------Final Eventos-------->
+        
+        
+    </main>
+    
+    <footer>
+        <div class="footerTop">
+            <div class="donateContent">
+                <p class="ad">Commercials = <span class="bad">bad</span>, music = <span class="good">good!</span><br>
+                    Flash FM, now with zero commercials! Please help support Flash FM, send your donation today.</p>
+                <a class="donate" href="https://paypal.me/ShadowAllvic?country.x=CR&locale.x=es_XC"
+                    target="_blank">Donate</a>
+            </div><!--------Final Adds-------->
+            <div class="derechos">
+                <p>
+                    ©All rights reserved Flash FM
+                </p>
+                <p>Location: Somewhere on VICE CITY</p>
+            </div>
+        </div><!--------Final Footer-------->
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/js/videoControls.js"></script> <!--------Final JS-------->
+</body>
+
+</html>
